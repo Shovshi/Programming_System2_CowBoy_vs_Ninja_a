@@ -7,10 +7,13 @@ namespace ariel
     class Point{
     
     private:
-    double a;
-    double b;
+    double x;
+    double y;
 
     public:
-    Point(double a , double b);
+    Point(double x , double y);
+    double distance(Point other);
+    void print();
+    Point moveTowards(Point source , Point dest , double dis);
     };
 }
