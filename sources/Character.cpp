@@ -14,6 +14,13 @@ namespace ariel
     }
 
     // Class functions
+    std::string Character::print()
+    {
+        std::ostringstream oss;
+        oss << "The name of the character: " << this->getName() << " , The num of self_Hit: " << this->_hit() << " , The location of the character is: ";
+        (this->getLocation()).print();
+        return oss.str();
+    }
     
 
 

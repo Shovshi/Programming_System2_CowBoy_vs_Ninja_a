@@ -4,6 +4,9 @@
 #include "Character.cpp"
 #include "Cowboy.cpp"
 #include "Ninja.cpp"
+#include "YoungNinja.hpp"
+#include "OldNinja.hpp"
+#include "TrainedNinja.hpp"
 #include <vector>
 using namespace std;
 
