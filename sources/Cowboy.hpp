@@ -1,15 +1,25 @@
 #pragma once
-#include <iostream>
-using namespace std;
+#include "Character.cpp"
 
 namespace ariel
 {
-    class Cowboy{
-    
-    private:
-   
+    class Cowboy : public Character
+    {
 
-    public:
-    
+    char type = 'C';
+    int ballsNum;
+
+    // Constructors
+    Cowboy(int ballsNum);
+    Cowboy();
+    ~Cowboy();
+
+
+    void shoot(Character *enemy);
+    bool hasboolets();
+    void reload();
+    char getType();
+    int getBallsNum();
+
     };
 }
