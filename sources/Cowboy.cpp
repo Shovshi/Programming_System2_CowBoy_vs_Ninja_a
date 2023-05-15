@@ -3,9 +3,9 @@
 
 namespace ariel
 {
-    Cowboy::Cowboy(int ballsNUm)
+    Cowboy::Cowboy(std::string name , Point location): Character(location , 110 , name)
     {
-        this->ballsNum = ballsNUm;
+        this->ballsNum = 6;
     } 
 
     void Cowboy::shoot(Character *enemy)

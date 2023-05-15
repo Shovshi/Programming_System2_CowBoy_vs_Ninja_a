@@ -9,8 +9,9 @@ namespace ariel
     char type = 'C';
     int ballsNum;
 
+    public:
     // Constructors
-    Cowboy(int ballsNum);
+    Cowboy(std::string name , Point location);
     Cowboy();
     ~Cowboy();
 
