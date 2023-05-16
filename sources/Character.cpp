@@ -1,4 +1,3 @@
-#include "Point.hpp"
 #include "Character.hpp"
 #include <cmath>
 
@@ -16,12 +15,25 @@ namespace ariel
     // Class functions
     std::string Character::print()
     {
-        std::ostringstream oss;
-        oss << "The name of the character: " << this->getName() << " , The num of self_Hit: " << this->_hit() << " , The location of the character is: ";
-        (this->getLocation()).print();
-        return oss.str();
+        std::string output = "Character Details:\n";
+        output += "Name: " + name + "\n";
+        output += "Hit Points: " + std::to_string(_hit) + "\n";
+        output += "Location: " + location.print() + "\n";
+
+        return output;
     }
-    
+
+    bool Character::isAlive()
+    {
+        return false;
+    }
+
+    double Character::distance(Character &other)
+    {
+        return 0;
+    }
 
 
 }
+    
+

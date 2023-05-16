@@ -1,5 +1,7 @@
 #include "Point.hpp"
 #include <cmath>
+#include <sstream>
+#include <string>
 
 namespace ariel
 {
@@ -11,6 +13,11 @@ namespace ariel
         this->y = y;
     }
 
+    Point::Point()
+    {
+        
+    }
+
     double Point::distance(Point other)
     {
         double dx = x - other.x;
@@ -18,9 +25,11 @@ namespace ariel
         return std::sqrt(dx*dx + dy*dy);
     }
 
-    void Point::print()
+    std::string Point::print()
     {
-         std::cout << "(" << x << "," << y << ")" << std::endl;
+        std::stringstream ss;
+        ss << "(" << x << ", " << y << ")";
+        return ss.str();
     }
 
     Point Point::moveTowards(Point source , Point dest , double dis)

@@ -12,17 +12,17 @@ using namespace std;
 
 namespace ariel
 {
-    class Team{
+    class Team2{
     
     private:
     Character *leader;
-    vector <Character> team;
+    vector <Character> team2;
 
     public:
-    Team(Character *leader);
-    ~Team();
+    Team2(Character *leader);
+    ~Team2();
     void add(Character *character);
-    void attack(Team *enemy);
+    void attack(Team2 *enemy);
     int stillAlive();
     void print();
 

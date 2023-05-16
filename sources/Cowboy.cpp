@@ -1,5 +1,6 @@
 #include "Cowboy.hpp"
-#include "Character.cpp"
+#include "Character.hpp"
+#include "Point.hpp"
 
 namespace ariel
 {

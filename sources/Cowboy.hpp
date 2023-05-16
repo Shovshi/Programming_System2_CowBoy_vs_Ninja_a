@@ -1,5 +1,5 @@
 #pragma once
-#include "Character.cpp"
+#include "Character.hpp"
 
 namespace ariel
 {

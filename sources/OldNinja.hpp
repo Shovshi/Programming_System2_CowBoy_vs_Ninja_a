@@ -1,5 +1,5 @@
 #pragma once
-#include "Ninja.cpp"
+#include "Ninja.hpp"
 
 namespace ariel 
 {

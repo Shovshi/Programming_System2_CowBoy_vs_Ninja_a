@@ -1,4 +1,3 @@
-#pragma once
 #include "Ninja.hpp"
 #include "Character.hpp"
 #include "Point.hpp"
